@@ -1,0 +1,8 @@
+
+<div [hidden]="isHiddenActivite" >
+  <div *ngFor="let activite of planning.affectationsMap[day]">
+    {{activite.idActivite}} - {{activite.activiteName}}
+  </div>
+  <app-activite-modal></app-activite-modal>
+</div>
+
